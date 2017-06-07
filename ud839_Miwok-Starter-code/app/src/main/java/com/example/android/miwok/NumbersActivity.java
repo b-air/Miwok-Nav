@@ -37,7 +37,7 @@ public class NumbersActivity extends AppCompatActivity {
     private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
-            // Now that the sound file has finished playing, release the media player resources.
+
             releaseMediaPlayer();
         }
     };
@@ -84,7 +84,6 @@ public class NumbersActivity extends AppCompatActivity {
                 releaseMediaPlayer();
 
                 Word word = words.get(position);
-
 
                 int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,
                         AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);

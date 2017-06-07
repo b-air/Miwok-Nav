@@ -82,7 +82,6 @@ public class FamilyActivity extends AppCompatActivity {
 
                 Word word = words.get(position);
 
-
                 int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,
                         AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
