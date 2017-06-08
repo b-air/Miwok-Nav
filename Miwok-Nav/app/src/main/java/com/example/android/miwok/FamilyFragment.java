@@ -44,10 +44,8 @@ public class FamilyFragment extends Fragment {
         public void onCompletion(MediaPlayer mMediaPlayer) {
 
             releaseMediaPlayer();
-
         }
     };
-
 
     public FamilyFragment() {
         // Required empty public constructor
